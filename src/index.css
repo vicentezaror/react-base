@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bungee', cursive;
+}
+
+p {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@layer components {
+  .text-border {
+    text-shadow:
+      -2px -2px 0 rgb(100, 100, 100),
+      2px -2px 0 rgb(100, 100, 100),
+      -2px 2px 0 rgb(100, 100, 100),
+      2px 2px 0 rgb(100, 100, 100);
+  }
+
+  .default-border {
+    box-shadow:
+      -2px -2px 0 rgb(100, 100, 100),
+      2px -2px 0 rgb(100, 100, 100),
+      -2px 2px 0 rgb(100, 100, 100),
+      2px 2px 0 rgb(100, 100, 100);
+  }
+}
